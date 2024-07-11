@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-content</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column; /* column, row, column-reverse, row-reverse */
+            justify-content: space-evenly;
+
+            background-color: lightblue;
+            min-height: 100vh;
+        }
+
+        .container div {
+            background-color: #f1c40f;
+            border: 1px solid #f39c12;
+            padding: 20px;
+            font-size: 30px;
+            height: 150px;
+        }
+
+        /* flex: sets how a flex item will grow or shrink to fit the space available in its flex container.*/
+
+        .item1 {
+            flex: 1;
+        }
+
+        .item2 {
+            flex: 2;
+        }
+        .item3 {
+            flex: 3;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+    </div>
+
+</body>
+
+</html>
